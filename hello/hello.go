@@ -16,6 +16,8 @@ func main() {
 	student.phone = 18328753072
 	student.addr = "四川绵阳三台县"
 	fmt.Println(student.name)
+	fmt.Println(student.phone)
+	fmt.Println(student.addr)
 	fmt.Println(student)
 
 }
