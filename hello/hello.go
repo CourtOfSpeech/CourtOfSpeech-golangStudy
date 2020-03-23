@@ -6,6 +6,7 @@ type student struct {
 	name  string
 	phone int
 	addr  string
+	age   int64
 }
 
 func main() {
@@ -15,9 +16,11 @@ func main() {
 	student.name = "jiangxin"
 	student.phone = 18328753072
 	student.addr = "四川绵阳三台县"
+	student.age = 18
 	fmt.Println(student.name)
 	fmt.Println(student.phone)
 	fmt.Println(student.addr)
+	fmt.Println(student.age)
 	fmt.Println(student)
 
 }
