@@ -22,5 +22,6 @@ func main() {
 	fmt.Println(student.addr)
 	fmt.Println(student.age)
 	fmt.Println(student)
+	
 
 }
