@@ -1,1 +1,1 @@
-# golangStudy
+# CourtOfSpeech-golangStudy
