@@ -48,8 +48,12 @@ func euler() {
 //勾股定理
 func triangle() {
 	a, b := 3, 4
-	c := int(math.Sqrt(float64(a*a + b*b)))
+	c := calcTriangle(a, b)
 	fmt.Println(c)
+}
+func calcTriangle(a, b int) (c int) {
+	c = int(math.Sqrt(float64(a*a + b*b)))
+	return
 }
 
 //常量
@@ -98,4 +102,8 @@ func main() {
 	consts()
 	enums()
 
+	if _, err := testTringle(); err != nil {
+		fmt.Println(err)
+	}
 }
+
