@@ -8,5 +8,6 @@
         atomic  pointer
     container
         strings string  rune
+        maps
         arrays  array   
 
