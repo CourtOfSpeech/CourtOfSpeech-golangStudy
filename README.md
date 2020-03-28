@@ -9,5 +9,6 @@
     container
         strings string  rune
         maps
-        arrays  array   
+        arrays  array
+        slices  slice   
 
