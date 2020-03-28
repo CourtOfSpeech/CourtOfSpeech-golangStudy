@@ -11,5 +11,7 @@
         maps
         arrays  array
         slices  slice
-        nonrepeatingsubstr  Find longest strings without repeated characters   
+        nonrepeatingsubstr  Find longest strings without repeated characters
+    queue   queue
+           
 
