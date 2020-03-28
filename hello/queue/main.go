@@ -18,4 +18,7 @@ func main() {
 	fmt.Println(q.Pop())
 	fmt.Println(q.IsEmpty())
 	//fmt.Println(q)
+	q.Push("adsfs")
+	fmt.Println(q.Pop())
+	
 }
