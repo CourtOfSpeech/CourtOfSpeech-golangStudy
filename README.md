@@ -10,5 +10,6 @@
         strings string  rune
         maps
         arrays  array
-        slices  slice   
+        slices  slice
+        nonrepeatingsubstr  Find longest strings without repeated characters   
 
