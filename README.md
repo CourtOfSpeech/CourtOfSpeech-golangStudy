@@ -16,6 +16,8 @@
     retriever   Definition and implementation of interfaces     duck typing
     functional  functional programming   closure    fibonacci
     tree        pointer     functional programming
-    errhanding  resource management and error handing
+    errhanding
+        defer   resource management
+        filelistingServer   error handing
            
 
