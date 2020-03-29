@@ -15,5 +15,6 @@
     queue   queue
     retriever   Definition and implementation of interfaces     duck typing
     functional  functional programming   closure    fibonacci
+    tree    pointer     functional programming
            
 
