@@ -3,22 +3,10 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"hello/functional/fib"
 	"io"
 	"strings"
 )
-
-//斐波那契数列
-//1, 1, 2, 3, 5, 8, 13, 21, 34, 55
-//   a, b
-//      a, b
-//func fibonacci() func() int {
-func fibonacci() intGen {
-	a, b := 0, 1
-	return func() int {
-		a, b = b, a+b
-		return a
-	}
-}
 
 //为函数实现接口,只有是类型就可以实现接口
 type intGen func() int
@@ -47,10 +35,10 @@ func printFileContents(reader io.Reader) {
 }
 
 func main() {
-	f := fibonacci()
+	//f := fib.Fibonacci()
 	// for i := 0; i < 10; i++ {
 	// 	fmt.Println(f())
 	// }
-
+	var f intGen = fib.Fibonacci()
 	printFileContents(f)
 }

@@ -12,9 +12,10 @@
         arrays  array
         slices  slice
         nonrepeatingsubstr  Find longest strings without repeated characters
-    queue   queue
+    queue       queue
     retriever   Definition and implementation of interfaces     duck typing
     functional  functional programming   closure    fibonacci
-    tree    pointer     functional programming
+    tree        pointer     functional programming
+    errhanding  resource management and error handing
            
 
