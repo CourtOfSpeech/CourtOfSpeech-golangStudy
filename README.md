@@ -14,5 +14,6 @@
         nonrepeatingsubstr  Find longest strings without repeated characters
     queue   queue
     retriever   Definition and implementation of interfaces     duck typing
+    functional  functional programming   closure    fibonacci
            
 
