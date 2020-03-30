@@ -19,5 +19,6 @@
     errhanding
         defer   resource management
         filelistingServer   error handing
+        recover recover     panic
            
 

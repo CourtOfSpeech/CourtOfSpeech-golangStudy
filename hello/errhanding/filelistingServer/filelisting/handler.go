@@ -4,13 +4,35 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
+	"strings"
 )
+
+const prefix = "/lists/"
+
+type userErr string
+
+func (e userErr) Error() string {
+	return e.Message()
+}
+
+//实现了 userError 接口
+func (e userErr) Message() string {
+	return string(e)
+}
 
 //处理请求业务逻辑的方法
 func HandleFileList(writer http.ResponseWriter,
 	request *http.Request) error {
+	//判断是否有这个方法处理逻辑的请求路径 ,没有就要返回
+	if strings.Index(request.URL.Path, prefix) != 0 {
+		//返回到go 自带的错误处理
+		//return errors.New("path must start with " + prefix)
+
+		//返回到自定义错误处理
+		return userErr("path must start with " + prefix)
+	}
 	//获取请求文件所在的路径 http://localhost:9999/list/fib.txt
-	path := request.URL.Path[len("/list/"):]
+	path := request.URL.Path[len(prefix):]
 	//获取文件后打开文件
 	file, err := os.Open(path)
 	if err != nil {
