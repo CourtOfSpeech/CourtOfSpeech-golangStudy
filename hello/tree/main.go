@@ -27,4 +27,15 @@ func main() {
 		nodeCount++
 	})
 	fmt.Println("Node count:", nodeCount)
+
+	//channel遍历二叉树,这里用来统计最大数
+	c := root.TraverseWithChannel()
+	maxNode := 0
+	for node := range c {
+		if node.Value > maxNode {
+			maxNode = node.Value
+		}
+	}
+
+	fmt.Println("Max Node value: ", maxNode)
 }
