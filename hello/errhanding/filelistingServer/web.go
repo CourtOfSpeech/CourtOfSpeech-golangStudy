@@ -4,6 +4,7 @@ import (
 	"hello/errhanding/filelistingServer/filelisting"
 	"log"
 	"net/http"
+	_ "net/http/pprof"
 	"os"
 )
 
