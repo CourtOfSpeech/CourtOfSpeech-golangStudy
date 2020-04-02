@@ -23,5 +23,6 @@
     goroutine   
     channel     c := make(chan int)
     http    http.Client
+    maze    Breadth First Search
            
 
